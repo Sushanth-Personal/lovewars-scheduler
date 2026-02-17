@@ -1,8 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+:root {
+  --war-purple: #3b0a64;
+  --war-red: #ff002b;
+}
 
 body {
-  background: #0a0a0a;
+  background-color: #0d0221;
+  background-image: 
+    radial-gradient(circle at 10% 40%, rgba(255, 0, 43, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 90% 60%, rgba(123, 44, 191, 0.2) 0%, transparent 40%),
+    linear-gradient(135deg, #0d0221 0%, #1a0a2e 100%);
   color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: var(--font-geist-sans);
+}
+
+.glass-card {
+  background: rgba(123, 44, 191, 0.15);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
